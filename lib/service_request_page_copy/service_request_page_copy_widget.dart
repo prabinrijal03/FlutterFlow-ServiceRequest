@@ -37,54 +37,142 @@ class _ServiceRequestPageCopyWidgetState
 
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
+    _model.textController4 ??=
+        TextEditingController(text: _model.textController1.text);
+    _model.textFieldFocusNode4 ??= FocusNode();
 
     _model.textController2 ??= TextEditingController();
     _model.textFieldFocusNode2 ??= FocusNode();
+    _model.textController5 ??=
+        TextEditingController(text: _model.textController2.text);
+    _model.textFieldFocusNode5 ??= FocusNode();
 
     _model.textController3 ??= TextEditingController();
     _model.textFieldFocusNode3 ??= FocusNode();
-
-    _model.textController4 ??= TextEditingController();
-    _model.textFieldFocusNode4 ??= FocusNode();
-
-    _model.textController5 ??= TextEditingController();
-    _model.textFieldFocusNode5 ??= FocusNode();
-
-    _model.textController6 ??= TextEditingController();
+    _model.textController6 ??=
+        TextEditingController(text: _model.textController3.text);
     _model.textFieldFocusNode6 ??= FocusNode();
 
     _model.textController7 ??= TextEditingController();
     _model.textFieldFocusNode7 ??= FocusNode();
+    _model.textController10 ??=
+        TextEditingController(text: _model.textController7.text);
+    _model.textFieldFocusNode10 ??= FocusNode();
 
     _model.textController8 ??= TextEditingController();
     _model.textFieldFocusNode8 ??= FocusNode();
+    _model.textController11 ??=
+        TextEditingController(text: _model.textController8.text);
+    _model.textFieldFocusNode11 ??= FocusNode();
 
     _model.textController9 ??= TextEditingController();
     _model.textFieldFocusNode9 ??= FocusNode();
-
-    _model.textController10 ??= TextEditingController();
-    _model.textFieldFocusNode10 ??= FocusNode();
-
-    _model.textController11 ??= TextEditingController();
-    _model.textFieldFocusNode11 ??= FocusNode();
-
-    _model.textController12 ??= TextEditingController();
+    _model.textController12 ??=
+        TextEditingController(text: _model.textController9.text);
     _model.textFieldFocusNode12 ??= FocusNode();
 
     _model.textController13 ??= TextEditingController();
     _model.textFieldFocusNode13 ??= FocusNode();
+    _model.textController15 ??=
+        TextEditingController(text: _model.textController13.text);
+    _model.textFieldFocusNode15 ??= FocusNode();
 
     _model.textController14 ??= TextEditingController();
     _model.textFieldFocusNode14 ??= FocusNode();
-
-    _model.textController15 ??= TextEditingController();
-    _model.textFieldFocusNode15 ??= FocusNode();
-
-    _model.textController16 ??= TextEditingController();
+    _model.textController16 ??=
+        TextEditingController(text: _model.textController14.text);
     _model.textFieldFocusNode16 ??= FocusNode();
 
     _model.textController17 ??= TextEditingController();
     _model.textFieldFocusNode17 ??= FocusNode();
+
+    _model.textController1?.addListener(() {
+      if (_model.textController4.text != _model.textController1.text) {
+        _model.textController4.text = _model.textController1.text;
+      }
+    });
+    _model.textController4?.addListener(() {
+      if (_model.textController1.text != _model.textController4.text) {
+        _model.textController1.text = _model.textController4.text;
+      }
+    });
+
+    _model.textController2?.addListener(() {
+      if (_model.textController5.text != _model.textController2.text) {
+        _model.textController5.text = _model.textController2.text;
+      }
+    });
+    _model.textController5?.addListener(() {
+      if (_model.textController2.text != _model.textController5.text) {
+        _model.textController2.text = _model.textController5.text;
+      }
+    });
+
+    _model.textController3?.addListener(() {
+      if (_model.textController6.text != _model.textController3.text) {
+        _model.textController6.text = _model.textController3.text;
+      }
+    });
+    _model.textController6?.addListener(() {
+      if (_model.textController3.text != _model.textController6.text) {
+        _model.textController3.text = _model.textController6.text;
+      }
+    });
+
+    _model.textController7?.addListener(() {
+      if (_model.textController10.text != _model.textController7.text) {
+        _model.textController10.text = _model.textController7.text;
+      }
+    });
+    _model.textController10?.addListener(() {
+      if (_model.textController7.text != _model.textController10.text) {
+        _model.textController7.text = _model.textController10.text;
+      }
+    });
+
+    _model.textController8?.addListener(() {
+      if (_model.textController11.text != _model.textController8.text) {
+        _model.textController11.text = _model.textController8.text;
+      }
+    });
+    _model.textController11?.addListener(() {
+      if (_model.textController8.text != _model.textController11.text) {
+        _model.textController8.text = _model.textController11.text;
+      }
+    });
+
+    _model.textController9?.addListener(() {
+      if (_model.textController12.text != _model.textController9.text) {
+        _model.textController12.text = _model.textController9.text;
+      }
+    });
+    _model.textController12?.addListener(() {
+      if (_model.textController9.text != _model.textController12.text) {
+        _model.textController9.text = _model.textController12.text;
+      }
+    });
+
+    _model.textController13?.addListener(() {
+      if (_model.textController15.text != _model.textController13.text) {
+        _model.textController15.text = _model.textController13.text;
+      }
+    });
+    _model.textController15?.addListener(() {
+      if (_model.textController13.text != _model.textController15.text) {
+        _model.textController13.text = _model.textController15.text;
+      }
+    });
+
+    _model.textController14?.addListener(() {
+      if (_model.textController16.text != _model.textController14.text) {
+        _model.textController16.text = _model.textController14.text;
+      }
+    });
+    _model.textController16?.addListener(() {
+      if (_model.textController14.text != _model.textController16.text) {
+        _model.textController14.text = _model.textController16.text;
+      }
+    });
   }
 
   @override
@@ -92,6 +180,40 @@ class _ServiceRequestPageCopyWidgetState
     _model.dispose();
 
     super.dispose();
+  }
+
+  void _syncDropdownValues() {
+    if (_model.dropDownValue1 != null && _model.dropDownValue2 == null) {
+      safeSetState(
+          () => _model.dropDownValueController2?.value = _model.dropDownValue1);
+    } else if (_model.dropDownValue2 != null && _model.dropDownValue1 == null) {
+      safeSetState(
+          () => _model.dropDownValueController1?.value = _model.dropDownValue2);
+    }
+
+    if (_model.dropDownValue3 != null && _model.dropDownValue6 == null) {
+      safeSetState(
+          () => _model.dropDownValueController6?.value = _model.dropDownValue3);
+    } else if (_model.dropDownValue6 != null && _model.dropDownValue3 == null) {
+      safeSetState(
+          () => _model.dropDownValueController3?.value = _model.dropDownValue6);
+    }
+
+    if (_model.dropDownValue4 != null && _model.dropDownValue7 == null) {
+      safeSetState(
+          () => _model.dropDownValueController7?.value = _model.dropDownValue4);
+    } else if (_model.dropDownValue7 != null && _model.dropDownValue4 == null) {
+      safeSetState(
+          () => _model.dropDownValueController4?.value = _model.dropDownValue7);
+    }
+
+    if (_model.dropDownValue5 != null && _model.dropDownValue8 == null) {
+      safeSetState(
+          () => _model.dropDownValueController8?.value = _model.dropDownValue5);
+    } else if (_model.dropDownValue8 != null && _model.dropDownValue5 == null) {
+      safeSetState(
+          () => _model.dropDownValueController5?.value = _model.dropDownValue8);
+    }
   }
 
   @override
@@ -574,7 +696,7 @@ class _ServiceRequestPageCopyWidgetState
                                                             decoration:
                                                                 InputDecoration(
                                                               hintText:
-                                                                  'MM/DD/YYYY',
+                                                                  'YYYY-MM-DD',
                                                               enabledBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
@@ -820,10 +942,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Female',
                                                             'Other'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue1 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue1 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -1023,7 +1147,7 @@ class _ServiceRequestPageCopyWidgetState
                                                             decoration:
                                                                 InputDecoration(
                                                               hintText:
-                                                                  'MM/DD/YYYY',
+                                                                  'YYYY-MM-DD',
                                                               enabledBorder:
                                                                   OutlineInputBorder(
                                                                 borderSide:
@@ -1259,10 +1383,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Female',
                                                             'Other'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue2 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue2 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -2666,10 +2792,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Mild fever',
                                                             'Headache'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue3 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue3 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -2758,10 +2886,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Option 2',
                                                             'Option 3'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue4 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue4 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -2850,10 +2980,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Option 2',
                                                             'Option 3'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue5 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue5 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -2944,10 +3076,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Mild fever',
                                                             'Headache'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue6 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue6 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -3026,10 +3160,12 @@ class _ServiceRequestPageCopyWidgetState
                                                             'Option 2',
                                                             'Option 3'
                                                           ],
-                                                          onChanged: (val) =>
-                                                              safeSetState(() =>
-                                                                  _model.dropDownValue7 =
-                                                                      val),
+                                                          onChanged: (val) {
+                                                            safeSetState(() =>
+                                                                _model.dropDownValue7 =
+                                                                    val);
+                                                            _syncDropdownValues();
+                                                          },
                                                           width:
                                                               double.infinity,
                                                           height: 50.0,
@@ -3119,10 +3255,12 @@ class _ServiceRequestPageCopyWidgetState
                                                           'Option 2',
                                                           'Option 3'
                                                         ],
-                                                        onChanged: (val) =>
-                                                            safeSetState(() =>
-                                                                _model.dropDownValue8 =
-                                                                    val),
+                                                        onChanged: (val) {
+                                                          safeSetState(() =>
+                                                              _model.dropDownValue8 =
+                                                                  val);
+                                                          _syncDropdownValues();
+                                                        },
                                                         width: 200.0,
                                                         height: 50.0,
                                                         textStyle:
@@ -3219,46 +3357,99 @@ class _ServiceRequestPageCopyWidgetState
                                                     .validate()) {
                                               return;
                                             }
-                                            if (_model.dropDownValue1 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue2 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue3 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue4 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue5 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue6 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue7 == null) {
-                                              return;
-                                            }
-                                            if (_model.dropDownValue8 == null) {
-                                              return;
-                                            }
-                                            await actions.customeActionOne(
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                              '',
-                                            );
 
-                                            context.pushNamed(
-                                                HomeTaskListWidget.routeName);
+                                            final isMobile =
+                                                MediaQuery.sizeOf(context)
+                                                        .width <
+                                                    kBreakpointMedium;
+
+                                            final patientName = isMobile
+                                                ? _model.textController1.text
+                                                : _model.textController4.text;
+
+                                            final dob = isMobile
+                                                ? _model.textController2.text
+                                                : _model.textController5.text;
+
+                                            final age = isMobile
+                                                ? _model.textController3.text
+                                                : _model.textController6.text;
+
+                                            final gender = isMobile
+                                                ? _model.dropDownValue1
+                                                : _model.dropDownValue2;
+
+                                            if (gender == null) {
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                SnackBar(
+                                                    content: Text(
+                                                        'Please select a gender')),
+                                              );
+                                              return;
+                                            }
+
+                                            final bloodPressure = isMobile
+                                                ? _model.textController7.text
+                                                : _model.textController10.text;
+
+                                            final height = isMobile
+                                                ? _model.textController8.text
+                                                : _model.textController11.text;
+
+                                            final weight = isMobile
+                                                ? _model.textController9.text
+                                                : _model.textController12.text;
+
+                                            final insuranceProvider = isMobile
+                                                ? _model.textController13.text
+                                                : _model.textController15.text;
+
+                                            final policyNumber = isMobile
+                                                ? _model.textController14.text
+                                                : _model.textController16.text;
+
+                                            final patientAddress =
+                                                _model.textController17.text;
+
+                                            try {
+                                              final serviceRequestId =
+                                                  await actions
+                                                      .customeActionOne(
+                                                FFAppState().BearerToken,
+                                                patientName,
+                                                dob,
+                                                age,
+                                                gender,
+                                                bloodPressure,
+                                                height,
+                                                weight,
+                                                insuranceProvider,
+                                                policyNumber,
+                                                patientAddress,
+                                              );
+
+                                              if (serviceRequestId != null) {
+                                                ScaffoldMessenger.of(context)
+                                                    .showSnackBar(
+                                                  SnackBar(
+                                                      content: Text(
+                                                          'Service request created successfully')),
+                                                );
+                                                context.pushNamed(
+                                                    HomeTaskListWidget
+                                                        .routeName);
+                                              }
+                                            } catch (e) {
+                                              print(
+                                                  'Error creating service request: $e');
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                SnackBar(
+                                                    content: Text(
+                                                        'Error creating service request: $e')),
+                                              );
+                                            }
                                           },
                                           text: 'Submit',
                                           options: FFButtonOptions(

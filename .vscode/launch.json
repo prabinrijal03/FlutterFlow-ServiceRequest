@@ -1,0 +1,85 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Flutter(DEV)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "5000",
+                "html",
+                "--dart-define-from-file=env/dev_env.json"
+            ],
+        },
+        {
+            "name": "Flutter(Mobile)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define-from-file=env/prod_env.json"
+            ],
+        },
+        {
+            "name": "Flutter(DEV-canvas)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "5000",
+                "canvaskit",
+                "--dart-define-from-file=env/dev_env.json"
+            ],
+        },
+        {
+            "name": "Flutter(QA)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "5000",
+                "html",
+                "--dart-define-from-file=env/qa_env.json"
+            ],
+        },
+        {
+            "name": "Flutter(PROD)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "5000",
+                "html",
+                "--dart-define-from-file=env/prod_env.json"
+            ],
+        },
+        {
+            "name": "Flutter(PROD_DEV)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "5000",
+                "html",
+                "--dart-define-from-file=env/prod_dev_env.json"
+            ],
+        },
+    ],
+    }
