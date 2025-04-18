@@ -45,7 +45,7 @@ class LogOutCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'LogOut',
-      apiUrl: 'https://flaskprod.shoprideon.com/auth/revoke',
+      apiUrl: 'https://flaskrideondev.shoprideon.com/auth/revoke',
       callType: ApiCallType.POST,
       headers: {},
       params: {},
@@ -73,7 +73,7 @@ class LoginCall {
 }''';
     return ApiManager.instance.makeApiCall(
       callName: 'Login',
-      apiUrl: 'https://flaskprod.shoprideon.com/auth/login',
+      apiUrl: 'https://flaskrideondev.shoprideon.com/auth/login',
       callType: ApiCallType.POST,
       headers: {},
       params: {},

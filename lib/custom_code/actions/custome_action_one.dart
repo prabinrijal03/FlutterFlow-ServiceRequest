@@ -25,7 +25,7 @@ Future customeActionOne(
     String patientAddress) async {
   final dio = Dio();
   final baseUrl =
-      'https://aidbox.shoprideon.com/fhir'; // Update with your Aidbox base Url
+      'https://aidboxdev.shoprideon.com/fhir'; // Update with your Aidbox base Url
 
   String? patientId;
 

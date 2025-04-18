@@ -3436,6 +3436,8 @@ class _ServiceRequestPageCopyWidgetState
                                                       content: Text(
                                                           'Service request created successfully')),
                                                 );
+                  print(FFAppState().BearerToken);
+
                                                 context.pushNamed(
                                                     HomeTaskListWidget
                                                         .routeName);
