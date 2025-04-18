@@ -523,8 +523,7 @@ class _HomeTaskListWidgetState extends State<HomeTaskListWidget> {
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Builder(
                                         builder: (context) {
-                                          final taskMock = (FFAppState().searchTask !=
-                                                          ''
+                                          final taskMock = (FFAppState().searchTask != ''
                                                   ? FFAppState()
                                                       .taskMockData
                                                       .where((e) =>
@@ -540,13 +539,17 @@ class _HomeTaskListWidgetState extends State<HomeTaskListWidget> {
                                                                   FFAppState()
                                                                       .selectedStatus)))
                                                       .toList()
-                                                  : (FFAppState().selectedStatus ==
+                                                  : (FFAppState()
+                                                              .selectedStatus ==
                                                           'All'
                                                       ? FFAppState()
                                                           .taskMockData
                                                       : FFAppState()
                                                           .taskMockData
-                                                          .where((e) => e.status == FFAppState().selectedStatus)
+                                                          .where((e) =>
+                                                              e.status ==
+                                                              FFAppState()
+                                                                  .selectedStatus)
                                                           .toList()))
                                               .toList();
 

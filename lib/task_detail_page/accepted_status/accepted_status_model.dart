@@ -1,11 +1,11 @@
+import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
-import 'accepted_status_widget.dart' show AcceptedStatusWidget;
 import 'package:flutter/material.dart';
 
-class AcceptedStatusModel extends FlutterFlowModel<AcceptedStatusWidget> {
+class AcceptedStatusModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this page.
 
+  final formKey = GlobalKey<FormState>();
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode1;
   TextEditingController? textController1;
@@ -19,8 +19,10 @@ class AcceptedStatusModel extends FlutterFlowModel<AcceptedStatusWidget> {
   TextEditingController? textController3;
   String? Function(BuildContext, String?)? textController3Validator;
   // State field(s) for DropDown widget.
-  String? dropDownValue;
-  FormFieldController<String>? dropDownValueController;
+  FocusNode? dropDownValue;
+  TextEditingController? textController12;
+  String? Function(BuildContext, String?)? textController12Validator;
+
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode4;
   TextEditingController? textController4;
@@ -54,42 +56,51 @@ class AcceptedStatusModel extends FlutterFlowModel<AcceptedStatusWidget> {
   TextEditingController? textController11;
   String? Function(BuildContext, String?)? textController11Validator;
 
-  @override
+  // Stores action output result for [Backend Call - API (GetUserInfo)] action in AcceptedStatus widget.
+  ApiCallResponse? userInfoResponse;
+  // Stores action output result for [Backend Call - API (GetUserDetails)] action in AcceptedStatus widget.
+  ApiCallResponse? userDetailsResponse;
+  // Stores action output result for [Backend Call - API (GetServiceRequests)] action in AcceptedStatus widget.
+  ApiCallResponse? serviceRequestsResponse;
+  // Stores action output result for [Backend Call - API (GetPatientDetails)] action in AcceptedStatus widget.
+  ApiCallResponse? patientDetailsResponse;
+
+  // Loading state
+  bool isLoading = true;
+  String? errorMessage;
+
+  /// Initialization and disposal methods.
+
   void initState(BuildContext context) {}
 
-  @override
   void dispose() {
     textFieldFocusNode1?.dispose();
     textController1?.dispose();
-
     textFieldFocusNode2?.dispose();
     textController2?.dispose();
-
     textFieldFocusNode3?.dispose();
     textController3?.dispose();
-
     textFieldFocusNode4?.dispose();
     textController4?.dispose();
-
     textFieldFocusNode5?.dispose();
     textController5?.dispose();
-
     textFieldFocusNode6?.dispose();
     textController6?.dispose();
-
     textFieldFocusNode7?.dispose();
     textController7?.dispose();
-
     textFieldFocusNode8?.dispose();
     textController8?.dispose();
-
     textFieldFocusNode9?.dispose();
     textController9?.dispose();
-
     textFieldFocusNode10?.dispose();
     textController10?.dispose();
-
     textFieldFocusNode11?.dispose();
     textController11?.dispose();
+    textController12?.dispose();
+    dropDownValue?.dispose();
   }
+
+  /// Action blocks are added here.
+
+  /// Additional helper methods are added here.
 }
